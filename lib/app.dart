@@ -35,20 +35,22 @@ class _AppState extends State<App> {
           minTextAdapt: true,
           splitScreenMode: true,
           useInheritedMediaQuery: true,
-          child: MaterialApp(
-            theme: themes[ThemeMode.light]!.themeData,
-            darkTheme: themes[ThemeMode.dark]!.themeData,
-            // themeMode: context.read<AppBloc>().state.themeMode,
-            onGenerateRoute: AppRouter.onGenerateRoute,
-            initialRoute: AppRouter.splash,
-            localizationsDelegates: context.localizationDelegates,
-            supportedLocales: context.supportedLocales,
-            locale: context.locale,
-            debugShowCheckedModeBanner: false,
-            builder: (_, child) {
-              return child!;
-            },
-          ),
+          child: Builder(builder: (context) {
+            return MaterialApp(
+              theme: themes[ThemeMode.light]!.themeData,
+              darkTheme: themes[ThemeMode.dark]!.themeData,
+              // themeMode: context.read<AppBloc>().state.themeMode,
+              onGenerateRoute: AppRouter.onGenerateRoute,
+              initialRoute: AppRouter.splash,
+              localizationsDelegates: context.localizationDelegates,
+              supportedLocales: context.supportedLocales,
+              locale: context.locale,
+              debugShowCheckedModeBanner: false,
+              builder: (_, child) {
+                return child!;
+              },
+            );
+          }),
         ),
       ),
     );

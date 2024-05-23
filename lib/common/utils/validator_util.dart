@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_unihack_template/common/extensions/string_extension.dart';
+import 'package:flutter_unihack_template/generated/locale_keys.g.dart';
 
 abstract class ValidatorUtil {
   static String? validateEmail(String? value) {
@@ -8,23 +10,6 @@ abstract class ValidatorUtil {
       }
     }
 
-    return null;
-  }
-
-  static String? validatePassword(String? value) {
-    if (value != null) {
-      if (value.length < 8) {
-        return LocaleKeys.validator_invalid_password.tr();
-      }
-    }
-
-    return null;
-  }
-
-  static String? validateName(String? value) {
-    if (value == null || value.isEmpty) {
-      return LocaleKeys.validator_field_required.tr();
-    }
     return null;
   }
 

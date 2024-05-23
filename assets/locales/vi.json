@@ -1,1 +1,14 @@
-{}
+{
+  "texts": {
+    "success": "Thành công",
+    "error_occur": "Đã có lỗi xảy ra, vui lòng thử lại sau"
+  },
+  "validator": {
+    "email_required": "Vui lòng nhập email",
+    "password_required": "Vui lòng nhập mật khẩu",
+    "invalid_email": "Không đúng định dạng email",
+    "incorrect_email_password": "Email hoặc mật khẩu không đúng",
+    "field_required": "Không được để trống",
+    "not_match_password": "Mật khẩu xác nhận không trùng khớp"
+  }
+}

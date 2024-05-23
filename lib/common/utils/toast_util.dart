@@ -1,7 +1,9 @@
 import 'dart:async';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_unihack_template/common/extensions/context_extension.dart';
+import 'package:flutter_unihack_template/generated/locale_keys.g.dart';
 
 enum ToastPosition { TOP, BOTTOM }
 

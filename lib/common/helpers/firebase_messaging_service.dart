@@ -37,6 +37,7 @@ abstract final class FirebaseMessagingService {
     });
 
     final token = await _messaging.getToken();
+
     log(token.toString());
   }
 
